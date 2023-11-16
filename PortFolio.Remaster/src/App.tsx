@@ -8,13 +8,18 @@ import { Contact } from './pages/contact/Contact'
 
 function App() {
   const [headerOpen, setHeaderOpen] = useState(false)
+  
 
   return (
-    <div className='bg-red-600 grid grid-cols-4 '>
+    <div className='min-h-screen flex justify-center items-start p-12'>
+    <div className='grid grid-cols-6 max-w-[1800px] my-auto'>
       <NavComponent />
-      <div className='bg-[url("")] col-span-3 grid grid-cols-4'>
-        <div>VSCode sidebat</div>
-        <div className='col-span-3' >
+      <div className='bg-[url("src/assets/images/VSCsidebar.png")] col-span-5 grid grid-cols-4 rounded-xl'>
+        <div>
+      
+
+        </div>
+        <div className='col-span-3 rounded-xl'>
           {headerOpen && <div></div>}
           <Routes>
             <Route path='/AboutMe' element={
@@ -27,6 +32,7 @@ function App() {
           </Routes>
           </div>
       </div>
+    </div>
     </div>
   )
 }
