@@ -7,16 +7,16 @@ import { Container } from "./styles";
 
 const Layout = () => {
   return (
-    <> 
-    <Container>
+    <div className="col-span-3"> 
+    
 <Header/>
 
-   
-<Outlet/>
+   <div>
+<Outlet/></div>
 <Footer/>
 
-</Container> 
-</>
+
+</div>
   );
 };
 

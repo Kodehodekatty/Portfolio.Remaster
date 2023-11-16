@@ -1,17 +1,7 @@
 
-export const NavComponent = ()  => {
+export const NavComponent = () => {
 
-return (
-
-<></>
-
-
-
-)
-
-
-
-
-
-
+    return (
+        <div className="bg-blue-400">sidebar</div>
+    )
 }
