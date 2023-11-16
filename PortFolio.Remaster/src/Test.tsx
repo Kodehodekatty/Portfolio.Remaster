@@ -1,4 +1,4 @@
-import { VscBackground } from "./styles"
+import { VscBackground } from "./pages/styles"
 
 export const Test = () => {
 

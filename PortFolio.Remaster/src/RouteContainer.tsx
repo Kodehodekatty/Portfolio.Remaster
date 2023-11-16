@@ -1,7 +1,7 @@
 import { Routes, Route, Navigate } from "react-router";
 
-import { Index } from ".";
-import Layout from "./Layout";
+import { Index } from "./pages";
+import Layout from "./pages/Layout";
 import { StartPage } from "./pages/startPage/StartPage";
 import PageNotFound from "./pages/pageNotFound/PageNotFound";
 
@@ -19,12 +19,16 @@ return (
     <Route element={<Layout />}>
       
 
-    
+    <Route
+            element={
+                <Index/>
+            }
+        >
       
                 <Route path="/" element={<StartPage />} />
            
            
-     
+     </Route>
 
       
 

@@ -1,6 +1,5 @@
-import { Body } from "../../styles"
 
-
+import body from '../../assets/images/aboutmebackground2.png'
 
 
 
@@ -11,7 +10,7 @@ import { Body } from "../../styles"
 export function StartPage() {
     return (
 <>
-<Body/>
+
 
 
 

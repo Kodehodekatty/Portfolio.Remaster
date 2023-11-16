@@ -36,10 +36,10 @@ body,
     width: 100%;
     font-family: ${FONTS.aboutMe1};
     height: 100%;
-    background-size: cover;
+    background-size: contain;
 
-    background-image: url("../images/triangles2.svg");
-
+    background-image: url("src/assets/images/Rectangle2.png");
+background-repeat: no-repeat;
 
     font-size: 13px;
   }
@@ -51,6 +51,7 @@ width: 100%;}
 
   display: grid;
     height: 100%;
+    width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 1fr auto;
     overflow-x: hidden; 
