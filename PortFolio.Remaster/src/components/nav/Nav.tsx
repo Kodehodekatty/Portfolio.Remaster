@@ -1,18 +1,20 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import { useNavigate } from "react-router"
 
 export const NavComponent = ({}) => {
 
-
+const navigate = useNavigate()
 const [showFace,setShowFace] = useState(false)
 
 
 
+
     return (
-        <div className=" m-auto">sidebar
+        <div className=" m-auto flex-auto h-4 ">sidebar
      
-        <button onClick={()=>{setShowFace(prev => !prev)}}>click</button>
-      <div className="border-2">
-       {showFace ? (<img src='src/assets/images/faceshadow.png' alt='shadowme' className='' /> ) : (  <img src='src/assets/images/fullshadow.png' alt='shadowme' className='' /> )
+        <button  className="bg-white m-1"  onClick={()=>{setShowFace(prev => !prev); navigate('/AboutMe')}}>click</button>
+      <div className="border-2 m-auto  ">
+       {showFace ? (<img src='src/assets/images/faceshadow2.png'  alt='shadowme' className='' /> ) : (  <img src='src/assets/images/fullshadow2.png' alt='shadowme' className='' /> )
 }
         
         </div>

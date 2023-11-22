@@ -7,20 +7,17 @@ import { Work } from './pages/work/Work'
 import { Contact } from './pages/contact/Contact'
 
 function App() {
-  const [headerOpen, setHeaderOpen] = useState(false)
+
   
 
   return (
-    <div className='min-h-screen flex justify-center items-start p-12'>
-    <div className='grid grid-cols-6 max-w-[1800px] my-auto'>
+    <div>
+    <div className='min-h-screen flex justify-center items-start p-12  '>
+    <div className='grid grid-cols-8 my-auto grid-rows-1 col-start-2 col-end-8 bg-[url("src/assets/images/vscbackground.png")] min-h-screen  bg-no-repeat bg-contain '>
       <NavComponent />
-      <div className='bg-[url("src/assets/images/VSCsidebar.png")] col-span-5 grid grid-cols-4 rounded-xl'>
-        <div>
-      
-
-        </div>
-        <div className='col-span-3 rounded-xl'>
-          {headerOpen && <div></div>}
+   
+        <div className='col-span-5 rounded-xl'>
+       
           <Routes>
             <Route path='/AboutMe' element={
           <AboutMe/>
