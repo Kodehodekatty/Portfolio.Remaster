@@ -1,24 +1,27 @@
 
-import { useState } from 'react'
 import { Route, Routes } from 'react-router'
 import { NavComponent } from './components/nav/Nav'
 import { AboutMe } from './pages/aboutMe/AboutMe'
 import { Work } from './pages/work/Work'
 import { Contact } from './pages/contact/Contact'
+import { PortfolioContextProvider } from './context/PortfolioContext'
+import Layout from './pages/Layout'
 
 function App() {
 
   
 
   return (
-    <div>
+    <PortfolioContextProvider>
+    
     <div className='min-h-screen flex justify-center items-start p-12  '>
-    <div className='grid grid-cols-8 my-auto grid-rows-1 col-start-2 col-end-8 bg-[url("src/assets/images/vscbackground.png")] min-h-screen  bg-no-repeat bg-contain '>
+    <div className='grid grid-cols-7 my-auto  bg-[url("src/assets/images/vscbackground.png")] min-h-screen  bg-no-repeat bg-contain '>
       <NavComponent />
    
-        <div className='col-span-5 rounded-xl'>
+        <div className='col-span-5 min-h-screen rounded-xl'>
        
           <Routes>
+          <Route path='/' element={<Layout />}>
             <Route path='/AboutMe' element={
           <AboutMe/>
             }/>
@@ -26,11 +29,14 @@ function App() {
             <Route path='/Contact' element={
               <Contact
               />}/>
+                   </Route>
+
           </Routes>
           </div>
       </div>
     </div>
-    </div>
+    
+    </PortfolioContextProvider>
   )
 }
 
