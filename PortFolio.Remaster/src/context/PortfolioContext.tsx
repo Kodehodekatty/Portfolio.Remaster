@@ -62,7 +62,7 @@ const openBodyFunc = () => {
 
     setShowBody((prev) => !prev)
     setBodyPageOpen((prev) => !prev);
-        navigate('/')
+  navigate('/AboutMe')
   
   
   }
@@ -76,11 +76,11 @@ const openBodyFunc = () => {
   
   }
 
-  useEffect(() => {
-    if (!showFace && !showBody && showFeet) {
-       setOnlyShadow(true)
-    }
-}, [])
+//   useEffect(() => {
+//     if (!showFace && !showBody && !showFeet) {
+//        setOnlyShadow(true)
+//     }
+// }, [])
 
 
 
