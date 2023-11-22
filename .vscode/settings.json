@@ -1,3 +1,7 @@
 {
-    "prettier.configPath": "prettierrc.json"
+    "prettier.configPath": "prettierrc.json",
+    "prettier.prettierPath": "./node_modules/prettier/index.cjs",
+    "prettier.semi": false,
+    "tailwindCSS.emmetCompletions": true,
+    "tailwindCSS.hovers": true
 }
